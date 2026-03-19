@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 function StreakRewards({ user }) {
-  const [streak, setStreak] = useState(8);
-  const [badges, setBadges] = useState({
+  const [streak] = useState(8);
+  const [badges] = useState({
     fire: { weeks: 4, earned: true, icon: '🔥', name: 'Fire Starter' },
     lightning: { weeks: 8, earned: true, icon: '⚡', name: 'Lightning Bolt' },
     diamond: { weeks: 12, earned: false, icon: '💎', name: 'Diamond Shield' },

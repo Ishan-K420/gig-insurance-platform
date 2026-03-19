@@ -5,9 +5,10 @@ function WeatherTracker({ city }) {
   const [loading, setLoading] = useState(true);
   const [lastUpdated, setLastUpdated] = useState(new Date());
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchWeather();
-    const interval = setInterval(fetchWeather, 300000); // Update every 5 minutes
+    const interval = setInterval(fetchWeather, 300000);
     return () => clearInterval(interval);
   }, [city]);
 

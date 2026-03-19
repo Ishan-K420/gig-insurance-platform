@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import Web3 from 'web3';
 
 function BlockchainVerification({ user }) {
   const [recentClaims] = useState([
