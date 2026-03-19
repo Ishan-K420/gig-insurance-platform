@@ -1,0 +1,42 @@
+gig-insurance-platform/
+├── README.md
+├── .gitignore
+├── frontend/
+│   ├── package.json
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── App.js
+│       ├── index.js
+│       ├── components/
+│       │   ├── Registration.js
+│       │   ├── Dashboard.js
+│       │   └── ClaimStatus.js
+│       └── services/
+│           └── api.js
+├── backend/
+│   ├── package.json
+│   ├── server.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── policy.js
+│   │   └── claims.js
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Policy.js
+│   │   └── Claim.js
+│   └── services/
+│       ├── weatherService.js
+│       └── premiumCalculator.js
+├── ml-service/
+│   ├── requirements.txt
+│   ├── app.py
+│   ├── models/
+│   │   ├── premium_model.py
+│   │   └── fraud_detector.py
+│   └── data/
+│       └── training_data.csv
+└── docs/
+    ├── API.md
+    ├── DATABASE_SCHEMA.md
+    └── DEPLOYMENT.md
